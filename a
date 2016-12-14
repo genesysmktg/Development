@@ -1,1 +1,13 @@
-djdj
+SELECT `ops_combined_contacts`.`Id`,
+`ops_combined_contacts`.`FirstName`,
+`ops_combined_contacts`.`LastName`,
+`ops_combined_contacts`.`Email`,
+`ops_combined_contacts`.`Company`,
+`ops_combined_contacts`.`Title`,
+`ops_combined_contacts`.`PersonaCustom`
+
+
+FROM `ops_combined_contacts`
+
+
+WHERE `ops_combined_contacts`.`Email` LIKE "%@nsw.gov.au%"
